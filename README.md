@@ -104,6 +104,29 @@ In this part, we'll integrate Prisma ORM into our NestJS application for databas
 
 3. Define your data model using Prisma's schema file (`schema.prisma`). Create models for "Teacher" and "Student" entities and their respective database tables.
 
+**Prisma Schema:**
+
+```prisma
+// schema.prisma
+
+model Teacher {
+  id             Int      @id @default(autoincrement())
+  name           String
+  age            Int
+  phoneNumber    String
+  address        String
+  numberOfClasses Int
+}
+
+model Student {
+  id                Int      @id @default(autoincrement())
+  name              String
+  age               Int
+  address           String
+  parentsPhoneNumber String
+}
+```
+
 4. Generate the Prisma Client:
 
    ```bash
@@ -113,4 +136,41 @@ In this part, we'll integrate Prisma ORM into our NestJS application for databas
 5. Integrate Prisma into your controllers and services. Update your NestJS controllers and services to use the Prisma Client for database operations.
 
 6. Test the CRUD operations on your NestJS application with Prisma integration using Postman or Thunder Client.
-You can copy and paste this content into a `README.md` file in your GitHub repository for your classmates to access and follow along with the workshop.
+
+**Dummy Data:**
+
+```json
+// Dummy Teachers Data
+[
+  {
+    "name": "John Smith",
+    "age": 35,
+    "phoneNumber": "+1234567890",
+    "address": "123 Main Street, Cityville",
+    "numberOfClasses": 3
+  },
+  {
+    "name": "Alice Johnson",
+    "age": 28,
+    "phoneNumber": "+9876543210",
+    "address": "456 Elm Avenue, Townsville",
+    "numberOfClasses": 2
+  }
+]
+
+// Dummy Students Data
+[
+  {
+    "name": "Emma Davis",
+    "age": 15,
+    "address": "789 Oak Lane, Villagetown",
+    "parentsPhoneNumber": "+1112223333"
+  },
+  {
+    "name": "Michael Wilson",
+    "age": 16,
+    "address": "567 Pine Road, Suburbia",
+    "parentsPhoneNumber": "+4445556666"
+  }
+]
+```

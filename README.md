@@ -1,25 +1,31 @@
 # Workshop
 
-Certainly! Here's the complete README file content for your GitHub repository:
+Certainly, here's a revised version of Part 1:
 
-```markdown
-# Prisma ORM Workshop with NestJS
+## Part 1: Setting Up NestJS with Teacher and Student Resources
 
-This repository contains the code and instructions for a workshop on integrating Prisma ORM with a NestJS application. The workshop is divided into three parts:
+In this part of the workshop, we will set up a NestJS application and create resources for "Teachers" and "Students." We will implement CRUD (Create, Read, Update, Delete) operations for these resources.
 
-## Part 1: NestJS Code with Teachers and Students Resources
+### Step 1: Create a New NestJS Project
 
-In this part, we'll create a NestJS application with "Teacher" and "Student" resources and implement CRUD operations for them.
-
-### Getting Started
-
-1. Create a new NestJS project using the Nest CLI:
+1. Start by creating a new NestJS project using the Nest CLI:
 
    ```bash
    nest new prisma-workshop
    ```
 
-2. Define your data models for "Teacher" and "Student" in the `src/teachers` and `src/students` folders, respectively. Use decorators to specify database columns, relations, and validation rules.
+   This command will generate the basic structure of your NestJS application.
+
+### Step 2: Define Your Data Models
+
+2. In this step, you'll define the data models for "Teacher" and "Student." These models will represent the structure of your database tables. Create two entities in the following folders:
+
+   - For "Teacher" entity: `src/teachers`
+   - For "Student" entity: `src/students`
+
+   Use decorators to specify database columns, relations, and validation rules for these entities.
+
+### Step 3: Generate Controllers and Services
 
 3. Generate controllers and services for both "Teacher" and "Student" entities using the Nest CLI:
 
@@ -30,17 +36,31 @@ In this part, we'll create a NestJS application with "Teacher" and "Student" res
    nest generate service students
    ```
 
-4. Implement CRUD operations in the controllers and services for both entities, including endpoints for creating, reading, updating, and deleting records.
+   These commands will create controller and service files for each entity.
 
-5. Define routes for each entity in the `app.module.ts` file and connect them to their respective controllers.
+### Step 4: Implement CRUD Operations
 
-6. Run your NestJS application:
+4. In the controllers and services you've generated, implement CRUD operations for both "Teacher" and "Student" entities. This includes creating endpoints for creating, reading, updating, and deleting records for each resource.
+
+### Step 5: Define Routes and Wiring
+
+5. Define routes for each entity in the `app.module.ts` file and connect them to their respective controllers. This will wire up the routes to the corresponding controller methods.
+
+### Step 6: Test Your NestJS Application
+
+6. Run your NestJS application using the following command:
 
    ```bash
    npm run start
    ```
 
-7. Test the CRUD operations using a tool like Postman or Thunder Client.
+   You can now test the CRUD operations using a tool like Postman or Thunder Client to interact with your API.
+
+### Step 7: Share Your Code
+
+7. Create a GitHub repository for your project and push the code to the repository. Share the repository link with your classmates so they can access and collaborate on the code.
+
+That's it for Part 1! You've successfully set up a NestJS application with "Teacher" and "Student" resources and implemented CRUD operations. In the next parts of the workshop, we will integrate Prisma ORM and set up a PostgreSQL database to enhance your application further.
 
 ## Part 2: Install Postgres Docker Image
 

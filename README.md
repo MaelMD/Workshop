@@ -1,7 +1,5 @@
 # Workshop
 
-Certainly, here's a revised version of Part 1:
-
 ## Part 1: Setting Up NestJS with Teacher and Student Resources
 
 In this part of the workshop, we will set up a NestJS application and create resources for "Teachers" and "Students." We will implement CRUD (Create, Read, Update, Delete) operations for these resources.
@@ -55,10 +53,6 @@ In this part of the workshop, we will set up a NestJS application and create res
    ```
 
    You can now test the CRUD operations using a tool like Postman or Thunder Client to interact with your API.
-
-### Step 7: Share Your Code
-
-7. Create a GitHub repository for your project and push the code to the repository. Share the repository link with your classmates so they can access and collaborate on the code.
 
 That's it for Part 1! You've successfully set up a NestJS application with "Teacher" and "Student" resources and implemented CRUD operations. In the next parts of the workshop, we will integrate Prisma ORM and set up a PostgreSQL database to enhance your application further.
 
@@ -119,14 +113,4 @@ In this part, we'll integrate Prisma ORM into our NestJS application for databas
 5. Integrate Prisma into your controllers and services. Update your NestJS controllers and services to use the Prisma Client for database operations.
 
 6. Test the CRUD operations on your NestJS application with Prisma integration using Postman or Thunder Client.
-
-## Additional Notes
-
-- Make sure to create clear documentation or a README file in your GitHub repository to guide your classmates on how to set up and run the project, including instructions for running the PostgreSQL container and integrating Prisma.
-
-- Don't forget to provide the GitHub repository link to your classmates so they can access the code and follow along with the workshop.
-
-Enjoy the workshop and happy coding!
-```
-
 You can copy and paste this content into a `README.md` file in your GitHub repository for your classmates to access and follow along with the workshop.
